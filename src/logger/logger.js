@@ -1,14 +1,6 @@
 //Module 1
-let url = 'https://www.google.com'
-
-function printMyMessage(message) {
-    console.log(message)    
+let welcome = function() {
+    console.log('Welcome to my application. I am Shreya and a part of FunctionUp Uranium cohort.')
 }
 
-function welcome() {
-    console.log('Welcome to my application. I am Sabiha and a part of FunctionUp Thorium cohort')
-}
-
-module.exports.url = url
-module.exports.printMessage = printMyMessage
-module.exports.printWelcomeMessage = welcome
+module.exports.welcomeMessage = welcome

@@ -1,26 +1,19 @@
 //Module 2
 
-//Prints the current date
-function printDate() {
-    let today = new Date()
-    let date = today.getDate()+'-'+(today.getMonth() + 1)+'-'+today.getFullYear()
-    // Added 1 to month because months start from 0
-    console.log('Current date is: ', date)
+let printDate = function() {
+    let currentDate = new Date()
+    console.log('The current date is : ',currentDate)
 }
 
-//Prints the current month
-function printMonth() {
-    let today = new Date()
-    let month = today.getMonth() + 1
-    // Added 1 to month because months start from 0
-    console.log('Current month is: ', month)
+let printMonth = function() {
+    let currentDate = new Date()
+    console.log('The current months is : ', currentDate.getMonth() + 1)
 }
 
-//Prints information about the batch
-function getBatchInfo() {
-    console.log('Thorium, W3D1, the topic for today is Nodejs module system')
+let getBatchInfo = function() {
+    console.log('Uranium, W2D4, the topic for today is Nodejs module system assignment discussion')
 }
 
-module.exports.printCurrentDate = printDate
+module.exports.printTodaysDate = printDate
 module.exports.printCurrentMonth = printMonth
-module.exports.printBatchInfo = getBatchInfo
+module.exports.printBatchInformation = getBatchInfo
